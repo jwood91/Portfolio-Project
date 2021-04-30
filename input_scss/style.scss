@@ -1,0 +1,13 @@
+@import 'utilities/variables',
+        'utilities/mixins';
+
+
+@import 'header/mobile-nav',
+        'header/sidebar',
+        'header/hero';
+
+@import 'main/cards',
+        'main/contact',
+        'main/scroll-up';
+
+@import 'main-styles';

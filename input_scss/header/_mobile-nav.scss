@@ -1,0 +1,89 @@
+/* top navigation on mobile breakpoint */
+#mobile-nav {
+  display: flex;
+  position: absolute;
+  top:0;
+  justify-content: space-between;
+  width: 100vw;
+  height: 4rem;
+  margin-top: 1em;
+  padding: 0px 20px 0 20px;
+  z-index: 99;
+
+  #initial-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    width: 4em;
+    height: 4em;
+    border: black solid 4px;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 2px 2px 0 0;
+    h1{
+      font-family: 'Source Code Pro', monospace;
+
+         }
+    }
+  #dropdown-button {
+    display: flex;;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    background-color: none;
+    width: 4em;
+    height: 4em;
+    border: black solid 4px;
+    border-radius: 5px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+    color: black;
+
+    }
+  @include mq('sm') {
+    visibility: hidden;
+  }
+  }
+
+
+
+
+
+  .hb-span {
+        position: absolute;
+        background-color: black;
+        width: 32px;
+        height: 4px;
+        line-height: 1.4px;
+
+        }
+  .hb-span:before{
+        content: " ";
+        display: block;
+        position: absolute;
+        background-color: black;
+        width: 32px;
+        height: 4px;
+        line-height: 1.4px;
+        top: -10px;
+        }
+  .hb-span:after{
+        content: " ";
+        display: block;
+        position: absolute;
+        background-color: black;
+        width: 32px;
+        height: 4px;
+        line-height: 1.4px;
+        bottom: -10px;
+      }
+
+
+
+// .hamburger:hover {
+//   background-color: #22242e;
+//   }

@@ -1,0 +1,78 @@
+/*Project Cards*/
+
+#project-cards {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #d31122;
+  a {
+      font-size: 20px;
+      text-decoration: none;
+      color: #5d5d5d;
+      font-family: 'Source Code Pro', monospace;
+      @include mq('md') {
+        width: 32%;
+
+      }
+    }
+
+
+  img{
+    width: 100%;
+  }
+  @include mq('md'){
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  @include mq('lg'){
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+
+.pc {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid rgba(0,0,0,0.3);
+  transition: 0.9s ease-in;
+  img{
+    transition: all 1.2s;
+  }
+  h5, p {
+    transition: 0.9s ease-in ;
+  }
+  @include mq('md') {
+    min-height: 12em;
+  }
+
+  }
+
+.pc:hover {
+  border: 3px solid green;
+  transition-duration: 1.2s;
+  img{
+    transform: scale(1.1);
+    filter: brightness(70%);
+
+    }
+  h5, p {
+    transition-duration: 1.2s ease-in;
+    color: black;
+    font-weight: 600;
+
+
+  }
+  }
+
+.image-div {
+  overflow: hidden;
+}
+/*spaces the cards evenly excludes bottom card*/
+
+.card-space{
+  margin-bottom: 30px;
+
+}
