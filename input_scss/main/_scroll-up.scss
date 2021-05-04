@@ -1,6 +1,7 @@
 #scroll-up-text {
   text-decoration: none;
   color: inherit;
+
 }
 #scroll-up-text:hover{
   color: #a9a9a9;
@@ -14,5 +15,9 @@
   width: 100%;
   height: auto;
   text-align: center;
+  h2 {
+    font-size: 22px;
+    margin-bottom: 1em;
+  }
 
 }
