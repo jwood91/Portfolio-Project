@@ -17,8 +17,13 @@
     }
   }
 }
-
-
+#phonecall {
+  text-decoration: none;
+  color: inherit;
+}
+#phonecall:hover {
+  text-decoration: underline;
+}
 #form-area {
   display: flex;
   flex-direction: column;
