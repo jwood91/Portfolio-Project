@@ -2,7 +2,9 @@
 
 #project-cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
   padding: 30px;
   background-color: #d31122;
   a {
@@ -10,10 +12,7 @@
       text-decoration: none;
       color: #5d5d5d;
       font-family: 'Source Code Pro', monospace;
-      @include mq('md') {
-        width: 32%;
 
-      }
     }
 
 
@@ -38,6 +37,7 @@
   background-color: rgb(255, 255, 255);
   border: 3px solid rgba(0,0,0,0.3);
   transition: 0.9s ease-in;
+  height: auto;
   img{
     transition: all 1.2s;
   }
@@ -45,10 +45,11 @@
     transition: 0.9s ease-in ;
   }
   @include mq('md') {
-    min-height: 12em;
+    width: 32%;
+    }
   }
 
-  }
+
 
 .pc:hover {
   border: 3px solid green;
@@ -73,6 +74,6 @@
 /*spaces the cards evenly excludes bottom card*/
 
 .card-space{
-  margin-bottom: 30px;
+  margin: 0 0 30px 0;
 
 }
