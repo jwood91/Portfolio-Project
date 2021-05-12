@@ -1,6 +1,8 @@
 @import 'utilities/variables',
         'utilities/mixins';
 
+@import 'main-styles';
+
 
 @import 'header/mobile-nav',
         'header/sidebar',
@@ -8,6 +10,7 @@
 
 @import 'main/cards',
         'main/contact',
-        'main/scroll-up';
-
-@import 'main-styles';
+        'main/scroll-up',
+        'main/coding',
+        'main/scs',
+        'main/about';

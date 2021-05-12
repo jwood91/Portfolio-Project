@@ -1,0 +1,42 @@
+#scs-container{
+
+  h2 {
+    font-size: 20px;
+  }
+  p{
+    font-size: 14px;
+  }
+  .treehouse {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 80%;
+    border-radius: 8px;
+    color: #5fcf80;
+    img {
+      height: 50px;
+      width: 50px;
+      margin-right: 2em;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+        }
+    @include mq('xs'){
+      margin-top: 5em;
+    }
+    @include mq('sm'){
+      margin-top: 0em;
+      width: 80%;
+    }
+    @include mq('md') {
+      width: 60%;
+    }
+
+}

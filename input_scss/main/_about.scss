@@ -1,4 +1,50 @@
-#about-container{
-  display:flex;
-  background-color: black;
-}
+
+  #about-container{
+    margin: 0em 0em 0em 1em;
+    #app2 {
+      font-size: 30px;
+      margin-bottom: 0.5em;
+    }
+    p {
+      animation: fadeIn linear 2s;
+      -webkit-animation: fadeIn linear 2s;
+      -moz-animation: fadeIn linear 2s;
+      -o-animation: fadeIn linear 2s;
+      -ms-animation: fadeIn linear 2s;
+    }
+
+    @include mq('xs'){
+     margin-top: 2em;
+    }
+    @include mq('sm'){
+      margin-top: 0em;
+      width: 80%;
+    }
+    @include mq('md') {
+      width: 60%;
+    }
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
