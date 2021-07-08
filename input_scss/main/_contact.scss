@@ -1,8 +1,11 @@
 /* homepage contact form */
 #contact-area {
   display: flex;
+  position: relative;
   flex-direction: column;
+  background-color: white;
   height: 38em;
+  width: 100%;
   padding: 30px;
   color: black;
   text-decoration: none;
@@ -56,4 +59,14 @@
   @include mq('md'){
     width: 48%;
   }
+}
+
+
+.invalid-email {
+  border: 2px solid red;
+
+}
+
+.valid-email {
+  border: 2px solid green;
 }

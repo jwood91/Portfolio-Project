@@ -1,15 +1,16 @@
 /* top navigation on mobile breakpoint */
 #mobile-nav {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   justify-content: space-between;
   width: 100%;
   height: 4rem;
-  margin-top: 1em;
-  padding: 0px 20px 0 20px;
-  z-index: 99;
+  padding: 0.5em 20px 0em 20px;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.8);
+
 
 
   #initial-link {
@@ -17,11 +18,11 @@
     justify-content: center;
     align-items: center;
     background-color: none;
-    width: 4em;
-    height: 4em;
-    border: black solid 4px;
+    width: 3em;
+    height: 3em;
+    border: #800000 solid 4px;
     border-radius: 5px;
-    color: black;
+    color: #800000;;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -38,13 +39,14 @@
     align-items: center;
     justify-content:center;
     background-color: none;
-    width: 4em;
-    height: 4em;
-    border: black solid 4px;
+    width: 3em;
+    height: 3em;
+    border: #800000 solid 4px;
     border-radius: 5px;
     padding-right: 30px;
     padding-bottom: 5px;
-    color: black;
+    color: #800000;
+    cursor: pointer;
 
     }
   @include mq('sm') {
@@ -59,7 +61,7 @@
   .hb-span {
         display: block;
         position: absolute;
-        background-color: black;
+        background-color:  #800000;
         width: 32px;
         height: 4px;
         line-height: 1.4px;
@@ -69,7 +71,7 @@
         content: " ";
         display: block;
         position: relative;
-        background-color: black;
+        background-color: #800000;
         width: 32px;
         height: 4px;
         line-height: 1.4px;
@@ -79,7 +81,7 @@
         content: " ";
         display: block;
         position: relative;
-        background-color: black;
+        background-color: #800000;
         width: 32px;
         height: 4px;
         line-height: 1.4px;
@@ -87,7 +89,6 @@
       }
 
 
-
-// .hamburger:hover {
-//   background-color: #22242e;
-//   }
+.scroll {
+  background: rgba(0, 0, 0, 0.8);
+}

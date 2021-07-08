@@ -18,173 +18,189 @@
    </head>
 
    <body>
-     <header>
-
-
-      <div id="sidebar-container">
-       <div id="sidebar">
-         <div id="sidebar-top">
-           <a href="#" id='initials'><h1>JW</h1></a>
-           <ul id="sidebar-nav">
-               <li><a href="about.html">About Me</a></li>
-               <li><a href="#project-cards">My Portfolio</a></li>
-               <li><a href="coding.html">Coding Examples</a></li>
-               <li><a href="scs.html">SCS Scheme</a></li>
-           </ul>
-         </div>
-           <div id="contact-side">
-             <div id="contact-link">
-               <a href="index.html#contact-area"><h2 id="contact">Contact Me</h2></a>
-             </div>
-               <ul id="contact-nav">
-                  <li><a href="https://www.linkedin.com/in/j-wood-980443211/"><i class="fab fa-linkedin"></i></a></li>
-                  <li><a href="https://github.com/jwood91"><i class="fab fa-github"></i></a></li>
-                  <li><a href="#contact-area"><i class="fas fa-envelope"></i></a></li>
+    <div id="wrapper">
+      <div id='mobile-nav'>
+        <a href="#" id='initial-link'><h1>JW</h1></a>
+        <div id="dropdown-button" onclick="toggleNav()">
+          <span class= "hamburger-box">
+                       <span class="hb-span"></span>
+                     </span>
+       </div>
+      </div>
+      <div id="side-nav">
+         <header>
+           <div id="sidebar-container">
+            <div id="sidebar">
+              <div id="sidebar-top">
+                <div id="logo-div">
+                  <a href="#" id='initials'><h1>JW</h1></a>
+               </div>
+                <ul id="sidebar-nav">
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="#project-cards">My Portfolio</a></li>
+                    <li><a href="coding.html">Coding Examples</a></li>
+                    <li><a href="scs.html">SCS Scheme</a></li>
                 </ul>
-            </div>
-       </div>
-     </div>
-     </header>
-     <main>
-       <div id='mobile-nav'>
-         <a href="#" id='initial-link'><h1>JW</h1></a>
-         <div id=dropdown-button>
-           <span class= "hamburger-box">
-                        <span class="hb-span"></span>
-                      </span>
-        </div>
-       </div>
-       <div id="hero-image">
-              <div id="hero-text">
-              <div id="app1"></div>
               </div>
-        <a href="#project-cards" id='scroll-down-text'>
-          <div id="scroll-down">
-            <h2>Scroll Down<br><i class="fas fa-chevron-down"></i></h2>
+                <div id="contact-side">
+                  <div id="contact-inner">
+                    <div id="contact-link">
+                      <a href="index.html#contact-area"><h2 id="contact">Contact Me</h2></a>
+                    </div>
+                      <ul id="contact-nav">
+                         <li><a href="https://www.linkedin.com/in/j-wood-980443211/" target=_blank><i class="fab fa-linkedin"></i></a></li>
+                         <li><a href="https://github.com/jwood91" target=_blank><i class="fab fa-github"></i></a></li>
+                         <li><a href="#contact-area"><i class="fas fa-envelope"></i></a></li>
+                       </ul>
+                   </div>
+                 </div>
+            </div>
           </div>
-        </a>
+       </header>
       </div>
 
+      <div id="main-content">
+
+       <div id="main" onclick="sideNavHide()">
+         <main>
+
+         <div id="hero-image">
+                <div id="hero-text">
+                <div id="app1"></div>
+                </div>
+          <a href="#project-cards" id='scroll-down-text'>
+            <div id="scroll-down">
+              <h2>Scroll Down<br><i class="fas fa-chevron-down"></i></h2>
+            </div>
+          </a>
+        </div>
 
 
 
 
- <!-- Project cards start here -->
+
+   <!-- Project cards start here -->
 
 
-        <div id="project-cards">
+          <div id="project-cards">
 
-            <div id="c1" class="pc card-space">
-                <a href="http://netmatters.joseph-wood.netmatters-scs.co.uk/" target="_blank">
-                    <div class="image-div">
-                      <img id="ci1" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
-                    </div>
-                        <div class="card-body">
-                          <h5 class="card-title">Netmatters Home Page</h5>
-                          <p class="card-desc">A project with the goal to recreate the Netmatters homepage.
-                          <p class="card-text">View Project</p>
+              <div id="c1" class="pc card-space">
+                  <a href="http://netmatters.joseph-wood.netmatters-scs.co.uk/" target="_blank">
+                      <div class="image-div">
+                        <img id="ci1" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
+                      </div>
+                          <div class="card-body">
+                            <h5 class="card-title">Netmatters Home Page</h5>
+                            <p class="card-desc">A project with the goal to recreate the Netmatters homepage.
+                            <p class="card-text">View Project</p>
+                      </div>
+                    </a>
+              </div>
+
+
+
+              <div id="c2" class="pc card-space">
+                <a href="#">
+                  <div class="image-div">
+                    <img id="ci2" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
+                  </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">View Project</p>
                     </div>
                   </a>
-            </div>
+              </div>
 
 
 
-            <div id="c2" class="pc card-space">
-              <a href="#">
-                <div class="image-div">
-                  <img id="ci2" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
-                </div>
-                  <div class="card-body">
-                      <h5 class="card-title">Project 2</h5>
-                      <p class="card-text">View Project</p>
-                  </div>
-                </a>
-            </div>
-
-
-
-            <div id="c3" class="pc card-space">
-              <a href="#">
-                  <div class="image-div">
-                    <img id="ci3" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
-                  </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Project 3</h5>
-                        <p class="card-text">View Project</p>
+              <div id="c3" class="pc card-space">
+                <a href="#">
+                    <div class="image-div">
+                      <img id="ci3" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
                     </div>
-                </a>
-            </div>
+                      <div class="card-body">
+                          <h5 class="card-title">Project 3</h5>
+                          <p class="card-text">View Project</p>
+                      </div>
+                  </a>
+              </div>
 
 
 
-            <div id="c4" class="pc card-space">
+              <div id="c4" class="pc card-space">
+                <a href="#">
+                    <div class="image-div">
+                      <img id="ci4" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
+                    </div>
+                      <div class="card-body">
+                            <h5   class="card-title">Project 4</h5>
+                            <p class="card-text">View Project</p>
+                      </div>
+                  </a>
+              </div>
+
+
+
+              <div id="c5" class="pc card-space">
               <a href="#">
                   <div class="image-div">
-                    <img id="ci4" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
+                    <img id="ci5" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
                   </div>
                     <div class="card-body">
-                          <h5   class="card-title">Project 4</h5>
+                          <h5 class="card-title">Project 5</h5>
                           <p class="card-text">View Project</p>
                     </div>
                 </a>
-            </div>
+              </div>
 
 
+              <div id="c6" class="pc card-space">
+                <a href="#">
+                    <div class="image-div">
+                      <img id="ci6" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body">
+                          <h5 class="card-title">Project 6</h5>
+                          <p class="card-text">View Project</p>
+                    </div>
+                </a>
+              </div>
 
-            <div id="c5" class="pc card-space">
-            <a href="#">
-                <div class="image-div">
-                  <img id="ci5" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
-                </div>
-                  <div class="card-body">
-                        <h5 class="card-title">Project 5</h5>
-                        <p class="card-text">View Project</p>
-                  </div>
-              </a>
-            </div>
+          </div>
 
+        <div id="contact-area">
+          <div id="contact-text">
+            <h2>Contact Me</h2>
+            <p><strong>Please feel free to contact me anytime, my details are below or use the contact form to get in touch.  Thank you.</strong></p>
+            <p>Telephone: <tcxspan id="phonecall" tcxhref="07506119468" title="Call  07506119468 via 3CX"> 07506119468</tcxspan></p>
+            <p>Email:<a href="mailto:webmaster@example.com">jwood4589@gmail.com</a></p>
+          </div>
 
-            <div id="c6" class="pc card-space">
-              <a href="#">
-                  <div class="image-div">
-                    <img id="ci6" src="images/netmatters-homepage.png" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card-body">
-                        <h5 class="card-title">Project 6</h5>
-                        <p class="card-text">View Project</p>
-                  </div>
-              </a>
-            </div>
-
+          <div id="form-area">
+            <form id="form">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name*">
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name*">
+                <input type="email" id="email" name="emailaddress" placeholder="Email Address*">
+                <input type="text" id="subject" name="subject" placeholder="Subject*">
+                <textarea type="text" id="message" name="message" placeholder="Message*"></textarea>
+                <input type="submit" value="Submit" onclick="submitMessage()">
+            </form>
+          </div>
         </div>
-
-      <div id="contact-area">
-        <div id="contact-text">
-          <h2>Contact Me</h2>
-          <p><strong>Please feel free to contact me anytime, my details are below or use the contact form to get in touch.  Thank you.</strong></p>
-          <p>Telephone: <tcxspan id="phonecall" tcxhref="07506119468" title="Call  07506119468 via 3CX"> 07506119468</tcxspan></p>
-          <p>Email: jwood4589@gmail.com</p>
-        </div>
-
-        <div id="form-area">
-          <form>
-              <input type="text" id="firstname" name="firstname" placeholder="First Name*">
-              <input type="text" id="lastname" name="lastname" placeholder="Last Name*">
-              <input type="email" id="email" name="emailaddress" placeholder="Email Address*">
-              <input type="text" id="subject" name="subject" placeholder="Subject">
-              <textarea type="text" id="message" name="message" placeholder="Message"></textarea>
-              <input type="submit" value="Submit">
-          </form>
-        </div>
+        <a href="#" id='scroll-up-text'>
+          <div id="scroll-up">
+            <h2><i class="fas fa-chevron-up"></i><br>Scroll up</h2>
+          </div>
+          </a>
+        </main>
       </div>
-      <a href="#" id='scroll-up-text'>
-        <div id="scroll-up">
-          <h2><i class="fas fa-chevron-up"></i><br>Scroll up</h2>
-        </div>
-      </a>
-    </main>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+crossorigin="anonymous"></script>
     <script type="text/javascript" src="javascript/myscripts.js"></script>
-  </body>
+</body>
 
 
 </html>

@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   height: auto;
   padding: 30px;
+  padding-bottom: -2em;
   background-color: #800000;
   cursor: pointer;
   a {
@@ -37,13 +38,13 @@
   border-radius: 5px;
   background-color: rgb(255, 255, 255);
   border: 3px solid rgba(0,0,0,0.3);
-  transition: 0.9s ease-in;
+  transition: 0.7s ease-in;
   height: auto;
   img{
-    transition: all 1.2s;
+    transition: all 0.7s;
   }
   h5, p {
-    transition: 0.9s ease-in ;
+    transition: 0.7s ease-in ;
   }
   .card-desc {
     font-size: 15px;
@@ -59,15 +60,15 @@
 
 
 .pc:hover {
-  border: 3px solid green;
-  transition-duration: 1.2s;
+  border: 3px solid black;
+  transition-duration: 0.7s;
   img{
     transform: scale(1.1);
     filter: brightness(70%);
 
     }
   h5, p {
-    transition-duration: 1.2s ease-in;
+    transition-duration: 0.7s ease-in;
     color: black;
   }
   .card-text {
@@ -83,4 +84,8 @@
 .card-space{
   margin: 0 0 30px 0;
 
+}
+
+#c6 {
+  margin-bottom: 0;
 }
