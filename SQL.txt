@@ -1,0 +1,17 @@
+
+SELECT actor.act_fname AS "Actor First Name",
+       actor.act_lname AS "Actor Last Name",
+       actor.act_gender AS "Actor Gender",
+       movie.mov_id AS "Movie ID",
+       movie.mov_title AS "Movie Title",
+       movie.mov_year AS "Movie Year",
+       movie.mov_dt_rel AS "Release Date",
+       movie.mov_rel_country AS "Release Country"
+
+  FROM ((movie_cast
+       INNER JOIN movie ON movie_cast.mov_id =
+       movie.mov_id)
+       INNER JOIN actor ON movie_cast.act_id =
+       actor.act_id)
+
+  WHERE actor.act_id IN (SELECT actor.act_id FROM actor WHERE actor.act_gender LIKE 'F')
