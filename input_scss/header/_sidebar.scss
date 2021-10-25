@@ -1,6 +1,6 @@
 #sidebar-container {
   display: flex;
-  background-image: url('../images/colour-splash-sidebar.jpg');
+  background-image: url("../images/colour-splash-sidebar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
@@ -18,7 +18,7 @@
   width: 275px;
   overflow: hidden;
   position: fixed;
-  padding-left: 8px;
+
   @include mq('sm') {
     width: 27%;
     padding-right: 8px;
